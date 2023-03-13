@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prova Vue Js</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+    <div id="container">
+
+        <input type="text" placeholder="Inserisci il nome" v-model="nome">
+        <input type="text" placeholder="Inserisci il cognome" v-model="cognome">
+        <button @click="saluta">Premi</button>
+
+        <div>Il mio nome è {{ fullName }}.</div>
+
+        <h1 v-bind:class="classe">questo titolo cambierà colore</h1>
+
+        <button @click="changeColor">cambia colore al titolo</button>
+
+        <div>hai cliccato {{counter}} volte</div>
+
+    </div>
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
